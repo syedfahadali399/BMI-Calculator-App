@@ -3,8 +3,8 @@ let form = document.querySelector("form")
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     
-    let height = parseInt(document.getElementById("input-height").value)
-    let weight = parseInt(document.getElementById("input-weight").value)
+    let height = parseFloat(document.getElementById("input-height").value)
+    let weight = parseFloat(document.getElementById("input-weight").value)
     let show = document.getElementById("show")
 
     if(height < 0) {
