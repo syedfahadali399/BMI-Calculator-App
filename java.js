@@ -12,7 +12,7 @@ form.addEventListener("submit", (e) => {
     } else if (weight < 0) {
         show.textContent = `Please enter valid weight`
     } else {
-        let bmiChecker = (weight / height).toFixed(2)
+        let bmiChecker = (weight / (height * height)).toFixed(2)
         show.textContent = bmiChecker
     }
 })
@@ -28,3 +28,4 @@ document.getElementById("refresh-height").addEventListener("click", () => {
 document.getElementById("refresh-result").addEventListener("click", () => {
     show.innerText = "0"
 })
+
